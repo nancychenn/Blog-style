@@ -213,7 +213,8 @@ $.getScript(getJsDelivrUrl('loading.js'), function () {
 function getJsDelivrUrl(file, directory) {
     file = setFileNameMin(file, directory);
     //https://github.com/nancychenn/Blog-style/blob/master/simpleMemory.js
-    return 'https://github.com/'+(window.cnblogsConfig.GhUserName)+'/'+(window.cnblogsConfig.GhRepositories)'/' + (file ? file : '');
+    return 'https://cdn.jsdelivr.net/gh/'+(window.cnblogsConfig.GhUserName)+'/'+(window.cnblogsConfig.GhRepositories)+'@'+(window.cnblogsConfig.GhVersions)+'/' + (file ? file : '');
+    //return 'https://github.com/'+(window.cnblogsConfig.GhUserName)+'/'+(window.cnblogsConfig.GhRepositories)'/' + (file ? file : '');
 }
 
 function setFileNameMin(file, directory) {
