@@ -80,7 +80,7 @@ $('#blog-news').prepend(sidebarHtml);
 window.cnblogsConfigDefault = {
     GhUserName: 'nancychenn',
     GhRepositories: 'Blog-style',
-    GhVersions: 'v1.1.0',
+    /*GhVersions: 'v1.1.0',*/
     blogUser: "unconfigured",
     blogAvatar: "",
     blogStartDate: "2019-01-01",
@@ -215,6 +215,29 @@ function getJsDelivrUrl(file, directory) {
     return 'https://cdn.jsdelivr.net/gh/'+(window.cnblogsConfig.GhUserName)+'/'+(window.cnblogsConfig.GhRepositories)+'@'+(window.cnblogsConfig.GhVersions)+'/' + (file ? file : '');
 }
 
+function setFileNameMin(file, directory) {
+    if (typeof file == 'undefined') return '';
+    var suffix  = null,fileArr = file.split('.');
+    if (fileArr.length > 0 && $.inArray(fileArr[(fileArr.length -1)], ['js', 'css']) != -1) {
+        suffix = fileArr.pop();
+        switch (suffix) {
+            case 'js':directory = 'master';break;
+            case 'css':directory = 'master';break;
+        }
+    } else {
+        if (typeof directory == 'undefined') return '';
+        switch (directory) {
+            case 'js':directory = 'master';break;
+            case 'css':directory = 'master';break;
+        }
+    }
+    file.search('.min') === -1 && fileArr.push('min');
+    suffix != null && fileArr.push(suffix);
+    return (typeof directory !== 'undefined' ? ( directory + '/' + fileArr.join('.')) : (fileArr.join('.')));
+}
+
+
+/*
 // optimization file name
 function setFileNameMin(file, directory) {
     if (typeof file == 'undefined') return '';
@@ -236,3 +259,4 @@ function setFileNameMin(file, directory) {
     suffix != null && fileArr.push(suffix);
     return (typeof directory !== 'undefined' ? ('src/' + directory + '/' + fileArr.join('.')) : (fileArr.join('.')));
 }
+*/
