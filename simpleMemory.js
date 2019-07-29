@@ -78,7 +78,7 @@ var sidebarHtml =
 $('#blog-news').prepend(sidebarHtml);
 
 window.cnblogsConfigDefault = {
-    GhUserName: '_楠',
+    GhUserName: 'nancychenn',
     GhRepositories: 'Blog-style',
     GhVersions: 'v1.1.0',
     blogUser: "unconfigured",
