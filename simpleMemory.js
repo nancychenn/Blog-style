@@ -78,8 +78,8 @@ var sidebarHtml =
 $('#blog-news').prepend(sidebarHtml);
 
 window.cnblogsConfigDefault = {
-    GhUserName: 'BNDong',
-    GhRepositories: 'Cnblogs-Theme-SimpleMemory',
+    GhUserName: '_楠',
+    GhRepositories: 'Blog-style',
     GhVersions: 'v1.1.0',
     blogUser: "unconfigured",
     blogAvatar: "",
@@ -173,8 +173,8 @@ window.cnblogsConfigDefault = {
     bottomBlogroll: [],
     bottomText: {
         icon: "❤️",
-        left: "图标左侧文字",
-        right: "图标右侧文字"
+        left: " ",
+        right: " "
     },
     consoleList: [],
     themeAuthor: false,
