@@ -19,12 +19,10 @@ var sidebarHtml =
     '            <div class="nav-title"></div>' +
     '            <div class="icon-list">' +
     '                <ul>' +
-    '                    <li><a href="https://www.cnblogs.com/bndong/" target="_self">首页</a></li>' +
-    '                    <li><a href="https://msg.cnblogs.com/send/BNDong" target="_blank">联系</a></li>' +
-    '                    <li><a href="https://www.cnblogs.com/bndong/rss" target="_blank">订阅</a></li>' +
+    '                    <li><a href="https://www.cnblogs.com/cn-q/" target="_self">首页</a></li>' +
+    '                    <li><a href="https://msg.cnblogs.com/send/cn-q" target="_blank">联系</a></li>' +
+    '                    <li><a href="http://feed.cnblogs.com/blog/u/524947/rss" target="_blank">订阅</a></li>' +
     '                    <li><a href="https://i.cnblogs.com/" target="_blank">管理</a></li>' +
-    '                    <li><a href="https://github.com/BNDong" target="_blank">GitHub</a></li>' +
-    '                    <li><a href="https://www.cnblogs.com/" target="_blank">CNBlogs</a></li>' +
     '                </ul>' +
     '            </div>' +
     '            <!-- 最新随笔 -->' +
